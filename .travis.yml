@@ -9,3 +9,6 @@ before_script
     - composer install
 
 script: ./vendor/bin/phpunit --bootstrap src/autoload.php tests/Container/IocContainerTest.php 
+
+matrix:
+      fast_finish: true
