@@ -5,7 +5,7 @@ before_script
     - composer self-update
     - composer install
 
-script: ./vendor/bin/phpunit --bootstrap src/autoload.php tests/Container/IocContainerTest.php 
+script:true
 
 matrix:
       fast_finish: true
