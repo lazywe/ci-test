@@ -1,0 +1,20 @@
+{
+    "name": "lazywe/ci-test",
+    "description": "ci测试",
+    "type": "project",
+    "authors": [
+        {
+            "name": "lazywe",
+            "email": "lazywe@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lazywe\\citest\\":"src/"
+        }
+    },
+    "require": {
+        "symfony/routing": "^4.1",
+        "phpunit/phpunit": "^7.2"
+    }
+}
