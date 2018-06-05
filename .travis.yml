@@ -1,7 +1,7 @@
 language: php
 php:
     - nightly
-before_install
+install:
     - composer self-update
     - composer install
 
