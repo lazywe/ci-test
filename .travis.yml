@@ -4,3 +4,8 @@ php:
     - '7.1'
     - hhvm
     - nightly
+before_script
+    - composer self-update
+    - composer install --prefer-source --no-interaction --dev
+
+script: ./vendor/bin/phpunit --coverage-text --coverage-clover --bootstrap src/autoload.php tests/Container/IocContainerTest.php 
